@@ -1,0 +1,14 @@
+<section class="weather-preview">
+    <article class="day-card">
+        <div>
+            <img src="./assets/imgs/{{forecast.Day.Icon}}.png">
+            <div class="date">{{forecast.Date | date: 'dd/MM/YYYY EE'}}</div>
+            <div class="description">{{forecast.Day.IconPhrase}}</div>
+            <div class="weather">
+                    <p>Max: {{forecast.Temperature.Maximum.Value}} °F</p>
+                    <p>Min: {{forecast.Temperature.Minimum.Value}} °F</p>
+            </div>
+
+    </div>
+    </article>
+</section>

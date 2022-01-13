@@ -1,0 +1,50 @@
+
+
+.app-header {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    background-color: rgba(160, 39, 79, 0.276);
+
+
+    .nav-container{
+        grid-column: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        font-size: 19px;
+
+        .logo {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 22px;
+            color: white;
+        }
+
+        .main-nav {
+            color: white;
+            display: flex;
+            li {
+                cursor: pointer;
+            }
+            li:first-of-type {
+                margin-inline-end: 30px;
+            }
+        }
+    }
+    @media (max-width:450px) {
+        grid-template-columns: 50px 1fr 50px;
+
+        .logo {
+            font-size: 16px;
+        }
+
+        .main-nav {
+            font-size: 15px;
+            li:first-of-type {
+                margin-inline-end: 3px;
+                
+            }
+        }
+    }
+}

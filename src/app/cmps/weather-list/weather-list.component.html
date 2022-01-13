@@ -1,0 +1,16 @@
+<section class="weather-list">
+    <p class="header" *ngIf="name ; else start">Showing Forecasts for  <span>{{name}}</span>
+         <img (click)="liked = !liked" *ngIf="liked ; else unliked" src="./assets/imgs/like.png">
+         <ng-template #unliked>
+            <img (click)="liked = !liked" src="./assets/imgs/unlike.png">
+         </ng-template>
+         
+        </p>
+    <ng-template #start>
+        <p class="header" >Start Your Search To View Forecasts</p>
+    </ng-template>
+    <div class="weathers">
+        <weather-preview *ngFor="let forecast of forecasts"[forecast]="forecast" ></weather-preview>
+    </div>
+    
+</section>

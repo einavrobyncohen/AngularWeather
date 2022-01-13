@@ -1,0 +1,42 @@
+.weather-preview {
+    
+    .day-card {
+        background-color: rgb(255 255 255 / 52%);
+        color: #2d2d2d;
+        width: 250px;
+        height: 350px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-inline-start: 20px;
+        margin-bottom: 20px;
+        img {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .date {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #626262c4;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .weather {
+            margin-top: 70px;
+            display: flex;
+            justify-content: space-between;
+
+            p:first-of-type {
+                margin-inline-end: 15px;
+            }
+        }
+    }
+}

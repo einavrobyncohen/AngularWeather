@@ -1,0 +1,6 @@
+<section class="home-page main">
+    <div class="main-content">
+        <weather-filter (onFilter)="onFilter($event)"></weather-filter>
+        <weather-list [name] = "locationName" [forecasts]="forecast"></weather-list>
+    </div>
+</section>

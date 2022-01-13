@@ -1,0 +1,6 @@
+<section class="weather-filter">
+   <form>
+    <label for="term"></label>
+    <input [(ngModel)]="filterBy.term" (ngModelChange)="setFilter()" type="text" name="term" placeholder="Type Location">
+   </form>
+</section>
